@@ -6,11 +6,22 @@
 
   roles:
     - role: ansible-role-docker
+
     - role: ansible-role-centos-python
-      pyfsrc_version: 3.5.2
-      pyfsrc_make_default: yes
-      pyfsrc_ssl_support: yes
-      pyfsrc_install_pip: yes
+        pyfsrc_version: 3.5.2
+        pyfsrc_make_default: yes
+        pyfsrc_ssl_support: yes
+        pyfsrc_install_pip: yes
+
+    - role: jupyterhub
+        jupyterhub_spawner: 'sudospawner'
+        install_jupyterlab: True
+        generate_testusers: True
+        gen_test_username:
+          - amy
+          - joe
+          - sue
+          - bob
 
   vars:
     docker_create_group: true
