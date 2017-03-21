@@ -1,0 +1,11 @@
+---
+
+- name: Provisioning datalab
+  hosts: 
+    - datalab
+
+  roles:
+    - ansible-role-docker
+
+  vars:
+    docker_create_group: true
