@@ -1,3 +1,6 @@
 [submodule "provisioning/roles/ansible-role-docker"]
 	path = provisioning/roles/ansible-role-docker
 	url = https://github.com/natbusa/ansible-role-docker.git
+[submodule "provisioning/roles/ansible-role-centos-python"]
+	path = provisioning/roles/ansible-role-centos-python
+	url = https://github.com/natbusa/ansible-role-centos-python.git
