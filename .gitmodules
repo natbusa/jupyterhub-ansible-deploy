@@ -4,3 +4,6 @@
 [submodule "provisioning/roles/ansible-role-centos-python"]
 	path = provisioning/roles/ansible-role-centos-python
 	url = https://github.com/natbusa/ansible-role-centos-python.git
+[submodule "provisioning/roles/ansible-role-centos-jupyterhub"]
+	path = provisioning/roles/ansible-role-centos-jupyterhub
+	url = https://github.com/natbusa/ansible-role-centos-jupyterhub.git
