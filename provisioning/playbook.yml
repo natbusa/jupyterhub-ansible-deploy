@@ -14,7 +14,8 @@
       pyfsrc_install_pip: yes
 
     - role: ansible-role-centos-jupyterhub
-      jupyterhub_spawner: 'sudospawner'
+      jupyterhub_spawner: 'dockerspawner'
+      default_docker_notebook_image: 'natbusa/sysuser-scipy-lab'
       install_jupyterlab: True
       generate_testusers: True
       gen_test_username:
