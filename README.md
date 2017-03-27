@@ -35,10 +35,10 @@ The default provisioning runs docker image spawner, which allows the logged-in u
     - role: ansible-role-centos-jupyterhub
       jupyterhub_spawner: 'imagespawner'
       jupyterhub_spawner_docker_image:
-        - 'natbusa/sysuser-scipy-lab'
-        - 'natbusa/sysuser-datascience-lab'
-        - 'natbusa/sysuser-tensorflow-lab'
-        - 'natbusa/sysuser-all-spark-lab'
+        - 'natbusa/jupyterhub-scipy-lab'
+        - 'natbusa/jupyterhub-datascience-lab'
+        - 'natbusa/jupyterhub-tensorflow-lab'
+        - 'natbusa/jupyterhub-all-spark-lab'
       generate_testusers: True
       gen_test_username:
         - amy
