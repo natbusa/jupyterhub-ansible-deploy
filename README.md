@@ -6,11 +6,10 @@ This setup provides a single-command way to startup start up a JupyterHub RHEL/C
 The only requirement is needed is [vagrant](https://www.vagrantup.com/). This setup heavily borrows from a number of ideas such as 
 the [JupyterHub deploy docker setup](https://github.com/jupyterhub/jupyterhub-deploy-docker).
 
-This repo contributes in two ways:
+This repo contributes to the what's already available in the following ways:
  
 * Provides a way to test a single-node JupyterHub installation on a clean CentOS VM.
- 
-* Setup JupyterHub using ansible in four different [spawner configurations](https://github.com/jupyter/dockerspawner):
+* Setup JupyterHub using an ansible [jupyterhub role](https://github.com/natbusa/ansible-role-centos-jupyterhub) in four different [spawner configurations](https://github.com/jupyter/dockerspawner):
 
   * [sudo spawner](https://github.com/jupyterhub/sudospawner) (jupyter notebook)
   * [sudo spawner](https://github.com/jupyterhub/sudospawner) (jupyter lab)
@@ -55,7 +54,7 @@ On the host - check the system journal:
 `sudo journalctl -u jupyterhub`
 
 when running docker containers:   
-`sudo docker logs <container-id`
+`sudo docker logs <container-id>`
 
 list running and paused containers:  
 `sudo docker ps -a`
