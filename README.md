@@ -12,9 +12,9 @@ This repo contributes to the what's already available in the following ways:
 * Setup JupyterHub using an ansible [jupyterhub role](https://github.com/natbusa/ansible-role-centos-jupyterhub) in four different [spawner configurations](https://github.com/jupyter/dockerspawner):
 
   * [sudo spawner](https://github.com/jupyterhub/sudospawner) (jupyter notebook)
-  * [sudo spawner](https://github.com/jupyterhub/sudospawner) (jupyter lab)
-  * [docker spawner](https://github.com/jupyterhub/dockerspawner) (jupyter lab, system user)
-  * [image spawner](https://github.com/ryanlovett/imagespawner/blob/master/imagespawner.py) (jupyter lab, system user, multiple images)
+  * [sudo spawner](https://github.com/jupyterhub/sudospawner) ([jupyter lab](https://github.com/jupyterlab/jupyterlab))
+  * [docker spawner](https://github.com/jupyterhub/dockerspawner) ([jupyter lab](https://github.com/jupyterlab/jupyterlab), [system user](https://github.com/jupyterhub/dockerspawner/tree/master/systemuser))
+  * [image spawner](https://github.com/ryanlovett/imagespawner/blob/master/imagespawner.py) ([jupyter lab](https://github.com/jupyterlab/jupyterlab), [system user](https://github.com/jupyterhub/dockerspawner/tree/master/systemuser), multiple images selector)
   
 ### sudo spawner
 ![JupyterHub single host sudo spawner deployment](docs/sudospawner.diagram.png)
